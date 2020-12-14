@@ -1,4 +1,4 @@
-# Functional-Programming-In-Lisp<br />
+# Functional Programming In Lisp<br />
 <br />
 Four functions are implement from each of the “List,” “Set,” “Math” sections and all three functions from the "Required" section using recursive programming. The implemented functions are listed below.<br />
 <br />
