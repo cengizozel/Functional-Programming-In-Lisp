@@ -53,7 +53,7 @@ Functional programming is the process of creating software which includes only m
 		nil
 		(append (reverse (cdr L)) (list (car L)))))
 ```
-In these functions, recursive programming is a more preferable way to create these functions compared to iterative programming.
+For these functions, recursive programming is more preferable compared to iterative programming.
   
 ## Sample Output
 
