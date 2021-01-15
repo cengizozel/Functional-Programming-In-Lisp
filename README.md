@@ -1,85 +1,97 @@
-# Functional Programming In Lisp<br />
-<br />
-Four functions are implement from each of the “List,” “Set,” “Math” sections and all three functions from the "Required" section using recursive programming. The implemented functions are listed below.<br />
-<br />
-List Functions<br />
-------------------<br />
-1. append<br />
-2. reverse<br />
-3. nub<br />
-4. addtoend<br />
-<br />
-Set Functions<br />
-------------------<br />
-1. member<br />
-2. insert<br />
-3. intersection<br />
-4. union<br />
-<br />
-Math Functions<br />
-------------------<br />
-1. abs<br />
-2. factorial<br />
-3. right-tri<br />
-4. nth-fibo<br />
-<br />
-Required Functions<br />
-------------------<br />
-1. perfectp<br />
-2. abundantp<br />
-3. deficientp<br />
-<br />
-HOW TO RUN:<br />
-This project was made in Windows. I used Notepad++ to write the code and abcl.jar on CMD to run it.<br />
-<br />
-- Open CMD and open the directory in which abcl.jar is located.<br />
-- Enter the command "java -jar abcl.jar".<br />
-- Enter "(load "main")". This is assuming abcl.jar and main.lisp are in the same folder. If not, the directory in which main is located should be written.<br />
-- The program should create all the functions, and a list of sample outputs will be printed (A copy of the output is included in this README.txt file)<br />
-- After that, REPL will be run. At this point, it will ask you to write inputs for the append function. You can put inputs or write nil to skip to the next function.<br />
-- After going through all the functions, the program will automatically quit.<br />
-<br />
-SAMPLE OUTPUT: This is the sample output created before getting into REPL. The exact same output will be printed by the program.<br />
-<br />
-***<br />
-*** Functional Programming in Lisp<br />
-*** Cengiz Ozel<br />
-***<br />
-<br />
-*** List functions<br />
-<br />
-(APPEND (1 3 X A) (4 2 B)) => (1 3 X A 4 2 B)<br />
-(REVERSE (A B C D)) => (D C B A)<br />
-(NUB (1 1 2 4 1 2 5)) => (4 1 2 5)<br />
-(ADDTOEND D (A B C)) => (A B C D)<br />
-<br />
-*** Set functions<br />
-<br />
-(MEMBER A (B C A D)) => T<br />
-(INSERT A (B C D)) => (A B C D)<br />
-(INSERT A (A B C D)) => (A B C D)<br />
-(INTERSECTION (A B C) (A C D)) => (A C)<br />
-(UNION (A B C) (A C D)) => (B A C D)<br />
-<br />
-*** Math functions<br />
-<br />
-(ABS 7) => 7<br />
-(ABS -7) => 7<br />
-(FACTORIAL 5) => 120<br />
-(RIGHT-TRI 3 4 5) => T<br />
-(RIGHT-TRI 1 2 3) => NIL<br />
-(NTH-FIBO 6) => 8<br />
-(NTH-FIBO 10) => 55<br />
-<br />
-*** Required functions<br />
-<br />
-(PERFECTP 5) => NIL<br />
-(PERFECTP 6) => T<br />
-(PERFECTP 36) => NIL<br />
-(PERFECTP 496) => T<br />
-(ABUNDANTP 5) => NIL<br />
-(ABUNDANTP 12) => T<br />
-(DEFICIENTP 5) => T<br />
-(DEFICIENTP 12) => NIL<br />
-<br />
-Further details regarding how the functions were written, the sample output was printed, and how REPL works is explained in the comments.<br />
+# Functional Programming In Lisp  
+  
+Fifteen functions are implemented in Lisp, which are categorized under “List,” “Set,” “Math”, and "Number Theory" sections using recursive programming. The implemented functions are listed below.
+  
+#### List Functions
+1. append
+2. reverse
+3. nub
+4. addtoend
+  
+#### Set Functions
+1. member
+2. insert
+3. intersection
+4. union
+  
+#### Math Functions
+1. abs
+2. factorial
+3. right-tri
+4. nth-fibo
+  
+#### Number Theory Functions
+1. perfectp
+2. abundantp
+3. deficientp
+  
+## Demo
+
+
+## Installation  
+This project was made in Windows. I used Notepad++ to write the code and abcl.jar on CMD to run it.  
+  
+- Open CMD and open the directory in which abcl.jar is located.  
+- Enter the command below.
+```batch
+java -jar abcl.jar
+```
+- Enter the command below. This is assuming abcl.jar and main.lisp are in the same folder. If not, the directory in which main is located should be written.  
+```batch
+(load "main")
+```
+- The program should create all the functions, and a list of sample outputs will be printed (A copy of the output is included below)  
+- After that, REPL will be run. At this point, it will ask you to write inputs for the append function. You can put inputs or write nil to skip to the next function.  
+- After going through all the functions, the program will automatically quit.
+
+## Functional Programming
+
+  
+## Sample Output
+
+This is the sample output created before getting into REPL. The exact same output will be printed by the program.  
+ 
+```lisp 
+***  
+*** Functional Programming in Lisp  
+*** Cengiz Ozel  
+***  
+  
+*** List functions  
+  
+(APPEND (1 3 X A) (4 2 B)) => (1 3 X A 4 2 B)  
+(REVERSE (A B C D)) => (D C B A)  
+(NUB (1 1 2 4 1 2 5)) => (4 1 2 5)  
+(ADDTOEND D (A B C)) => (A B C D)  
+  
+*** Set functions  
+  
+(MEMBER A (B C A D)) => T  
+(INSERT A (B C D)) => (A B C D)  
+(INSERT A (A B C D)) => (A B C D)  
+(INTERSECTION (A B C) (A C D)) => (A C)  
+(UNION (A B C) (A C D)) => (B A C D)  
+  
+*** Math functions  
+  
+(ABS 7) => 7  
+(ABS -7) => 7  
+(FACTORIAL 5) => 120  
+(RIGHT-TRI 3 4 5) => T  
+(RIGHT-TRI 1 2 3) => NIL  
+(NTH-FIBO 6) => 8  
+(NTH-FIBO 10) => 55  
+  
+*** Number Theory functions  
+  
+(PERFECTP 5) => NIL  
+(PERFECTP 6) => T  
+(PERFECTP 36) => NIL  
+(PERFECTP 496) => T  
+(ABUNDANTP 5) => NIL  
+(ABUNDANTP 12) => T  
+(DEFICIENTP 5) => T  
+(DEFICIENTP 12) => NIL
+```  
+  
+Further details regarding how the functions were written, the sample output was printed, and how REPL works is explained in the comments.  
