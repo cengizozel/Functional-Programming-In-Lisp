@@ -46,7 +46,7 @@ java -jar abcl.jar
 - After going through all the functions, the program will automatically quit.
 
 ## Functional Programming
-Functional programming is the process of creating software which includes only mathematical functions and does not include any other concepts such as Object Oriented Programming. These functions are written using recursive algorithms. This makes it so that the function calls itself until an answer is returned. After that, the function unwinds and returns the final result.
+Functional programming is the process of creating software which includes only mathematical functions and does not include any other concepts such as Object Oriented Programming. These functions are often written using recursive algorithms. This makes it so that the function calls itself until an answer is returned. After that, the function unwinds and returns the final result.
 ```lisp
 (defun reverse (L)
 	(if (eq L nil)
