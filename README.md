@@ -3,34 +3,35 @@
 Fifteen functions are implemented in Lisp, which are categorized under “List,” “Set,” “Math”, and "Number Theory" sections using recursive programming. The implemented functions are listed below.
   
 #### List Functions
-1. append
-2. reverse
-3. nub
-4. addtoend
+1. **append:** Append two lists.
+2. **reverse:** Reverse a list.
+3. **nub:** Remove duplicates from a list.
+4. **addtoend:** Add an element to the end of a list.
   
 #### Set Functions
-1. member
-2. insert
-3. intersection
-4. union
+1. **member:** Set membership.
+2. **insert:** Insert element into set.
+3. **intersection:** Set intersection.
+4. **union:** Set union.
   
 #### Math Functions
-1. abs
-2. factorial
-3. right-tri
-4. nth-fibo
+1. **abs:** Absolute value.
+2. **factorial:** Factorial.
+3. **right-tri:** Check if 3 integers can be the lengths of the two sides and the hypotenuse of a right triangle.
+4. **nth-fibo:** Nth Fibonacci number.
   
 #### Number Theory Functions
-1. perfectp
-2. abundantp
-3. deficientp
+1. **perfectp:** Checks if the sum of a number's factors other than itself is equal to the number itself.
+2. **abundantp:** Checks if the sum of a number's factors other than itself is greater than the number itself.
+3. **deficientp:** Checks if the sum of a number's factors other than itself is less than the number itself.
   
 ## Demo
-
+![1](https://user-images.githubusercontent.com/60388555/104777312-74e00680-5749-11eb-8222-49ed2d7a9226.PNG)
 
 ## Installation  
 This project was made in Windows. I used Notepad++ to write the code and abcl.jar on CMD to run it.  
-  
+- Download 
+[main.lisp](https://github.com/cengizozel/Functional-Programming-In-Lisp/archive/main.zip).
 - Open CMD and open the directory in which abcl.jar is located.  
 - Enter the command below.
 ```batch
@@ -45,7 +46,14 @@ java -jar abcl.jar
 - After going through all the functions, the program will automatically quit.
 
 ## Functional Programming
-
+Functional programming is the process of creating software which includes only mathematical functions and does not include any other concepts such as Object Oriented Programming. These functions are written using recursive algorithms. This makes it so that the function calls itself until an answer is returned. After that, the function unwinds and returns the final result.
+```lisp
+(defun reverse (L)
+	(if (eq L nil)
+		nil
+		(append (reverse (cdr L)) (list (car L)))))
+```
+In these functions, recursive programming is a more preferable way to create these functions compared to iterative programming.
   
 ## Sample Output
 
@@ -93,5 +101,10 @@ This is the sample output created before getting into REPL. The exact same outpu
 (DEFICIENTP 5) => T  
 (DEFICIENTP 12) => NIL
 ```  
-  
-Further details regarding how the functions were written, the sample output was printed, and how REPL works is explained in the comments.  
+
+## REPL
+A read–eval–print loop (REPL) is an interactive program that takes inputs from the user and executes the appropriate functions with them in order to return a result. This is common in LISP, and the image below shows how the REPL in this project looks.
+
+![2](https://user-images.githubusercontent.com/60388555/104777419-9e992d80-5749-11eb-9501-5879d478df20.PNG)
+
+REPL gives the user a chance to use the functions in real time without having the need to hard code everything inside of the source file.
