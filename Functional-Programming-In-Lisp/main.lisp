@@ -102,8 +102,8 @@ Name: Cengiz Ozel
 			(+ (nth-fibo (- n 1)) (nth-fibo(- n 2))))))
 
 
-; Required
-; The computation between the three required functions are very similar, so it's better to set common functions.
+; Number Theory
+; The computation between the three number theory functions are very similar, so it's better to set common functions.
 ; This adds up all the factors. We initiate sum with 1 because we already know any integer can be perfectly devided by 1. It starts by trying to divide the input number i by i-1. Then we decrease the number it attempts to divide. If it does divide, then the number gets added up to the 'total' variable. In the end, total equals to the sum of the number's factors and is returned.
 (defun totalFactor (i n total numbers)
 	(if (< n 1)
@@ -118,7 +118,7 @@ Name: Cengiz Ozel
 		numbers
 		(numSet (- i 1) (cons i numbers))))
 
-; The following part is the 3 main functions of the Required category. It compares the user input with the sum of its factors other than itself.
+; The following part is the 3 main functions of the Number Theory category. It compares the user input with the sum of its factors other than itself.
 ; Perfect
 ; Checks if the sum of a number's factors other than itself is equal to the number itself.
 (defun perfectp (i)
@@ -205,7 +205,7 @@ Name: Cengiz Ozel
 (format t "(NTH-FIBO 10) => ")
 (prin1 (nth-fibo 10)) (terpri)
 
-(terpri) (format t "*** Required functions") (terpri) (terpri)
+(terpri) (format t "*** Number Theory functions") (terpri) (terpri)
 
 (format t "(PERFECTP 5) => ")
 (prin1 (perfectp 5)) (terpri)
