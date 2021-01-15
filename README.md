@@ -1,6 +1,6 @@
 # Functional Programming In Lisp  
   
-Fifteen functions are implemented in Lisp, which are categorized under “List,” “Set,” “Math”, and "Number Theory" sections using recursive programming. The implemented functions are listed below.
+Fifteen functions are implemented in Lisp, which are categorized under “List,” “Set,” “Math,” and "Number Theory" sections using recursive programming. The implemented functions are listed below.
   
 #### List Functions
 1. **append:** Append two lists.
